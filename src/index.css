@@ -1,13 +1,133 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+  border-bottom: 2px solid salmon;
+  overflow: hidden;
+}
+
+.navbar a.icon {
+  display: none;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #eee;
+}
+
+.Home div {
+  margin: 16px;
+  padding: 16px;
+}
+
+/* entries preview as list */
+
+.entry-preview {
+  padding: 16px;
+  margin: 20px;
+  border-bottom: 1px solid lightsalmon;
+}
+
+.entry-preview a {
+  text-decoration: none;
+}
+
+.entry-preview:hover {
+  box-shadow: 1px 1px darksalmon;
+}
+
+.entry-preview h2 {
+  font-size: 20px;
+  color: darksalmon;
+  margin-bottom: 10px;
+}
+
+.entry-preview p, .entry-preview div {
+  margin: 10px;
+}
+
+button {
+  background-color: rgb(255, 230, 230);
+  color: rgb(117, 4, 4);
+  border-radius: 6px;
+  border: 0;
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(245, 212, 212);
+}
+
+button:active {
+  background-color: rgb(250, 202, 202);
+}
+
+/* Entry detail single */
+
+.entry-details {
+  padding: 16px;
+  margin: 20px;
+}
+
+.entry-details h2 {
+  font-size: 26px;
+  color: darksalmon;
+  margin-bottom: 10px;
+}
+
+.entry-details p {
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.entry-details div {
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.entry-details .entry-details-body::first-letter {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.new-entry {
+  padding: 16px;
+  margin: 20px;
+  display: block;
+}
+
+.new-entry h2 {
+  margin-bottom: 30px;
+}
+
+.new-entry input, .new-entry textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 16px 2px;
+  display: block;
+  border: 1px solid darksalmon;
 }
